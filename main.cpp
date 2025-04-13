@@ -2,8 +2,20 @@
 
 using namespace std;
 
-void enter()
-{}
+string arr1[20],arr2[20],arr3[20],arr4[20],arr5[20];
+
+int total = 0;
+
+void enter() {
+
+    int choice;
+    cout<<"How many students do you want to enter: ";
+    cin>>choice;
+
+    for (int i = 0; i<choice; i++) {
+        cout<<"\nEnter data of student: "<<i+1<<endl;
+    }
+}
 
 void show()
 {}
