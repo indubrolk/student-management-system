@@ -7,13 +7,32 @@ string arr1[20],arr2[20],arr3[20],arr4[20],arr5[20];
 int total = 0;
 
 void enter() {
-
     int choice;
     cout<<"How many students do you want to enter: ";
     cin>>choice;
-    total = total + choice;
 
-    for (int i = 0; i<choice; i++) {
+    if (total==0){
+
+        total = total + choice;
+
+        for (int i = 0; i<choice; i++) {
+            cout<<"\nEnter data of student: "<<i+1<<endl<<endl;
+            cout<<"Enter name: ";
+            cin>>arr1[i];
+            cout<<"Enter rollno: ";
+            cin>>arr2[i];
+            cout<<"Enter course: ";
+            cin>>arr3[i];
+            cout<<"Enter class: ";
+            cin>>arr4[i];
+            cout<<"Enter contact: ";
+            cin>>arr5[i];
+        }
+    }
+
+
+    else {
+    for (int i = total; i<total + choice; i++) {
         cout<<"\nEnter data of student: "<<i+1<<endl<<endl;
         cout<<"Enter name: ";
         cin>>arr1[i];
@@ -26,19 +45,20 @@ void enter() {
         cout<<"Enter contact: ";
         cin>>arr5[i];
     }
+  }
 }
 
-void show() {
+    void show() {
 
-    for (int i = 0; i<total; i++) {
-        cout<<"Data of student: "<<i+1<<endl<<endl;
-        cout<<"Name: "<<arr1[i]<<endl;
-        cout<<"Rollno: "<<arr2[i]<<endl;
-        cout<<"Course: "<<arr3[i]<<endl;
-        cout<<"Class: "<<arr4[i]<<endl;
-        cout<<"Contact: "<<arr5[i]<<endl;
+        for (int i = 0; i<total; i++) {
+            cout<<"Data of student: "<<i+1<<endl<<endl;
+            cout<<"Name: "<<arr1[i]<<endl;
+            cout<<"Rollno: "<<arr2[i]<<endl;
+            cout<<"Course: "<<arr3[i]<<endl;
+            cout<<"Class: "<<arr4[i]<<endl;
+            cout<<"Contact: "<<arr5[i]<<endl;
+        }
     }
-}
 
 void search()
 {}
