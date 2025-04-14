@@ -11,14 +11,34 @@ void enter() {
     int choice;
     cout<<"How many students do you want to enter: ";
     cin>>choice;
+    total = total + choice;
 
     for (int i = 0; i<choice; i++) {
-        cout<<"\nEnter data of student: "<<i+1<<endl;
+        cout<<"\nEnter data of student: "<<i+1<<endl<<endl;
+        cout<<"Enter name: ";
+        cin>>arr1[i];
+        cout<<"Enter rollno: ";
+        cin>>arr2[i];
+        cout<<"Enter course: ";
+        cin>>arr3[i];
+        cout<<"Enter class: ";
+        cin>>arr4[i];
+        cout<<"Enter contact: ";
+        cin>>arr5[i];
     }
 }
 
-void show()
-{}
+void show() {
+
+    for (int i = 0; i<total; i++) {
+        cout<<"Data of student: "<<i+1<<endl<<endl;
+        cout<<"Name: "<<arr1[i];
+        cout<<"Rollno: "<<arr2[i];
+        cout<<"Course: "<<arr3[i];
+        cout<<"Class: "<<arr4[i];
+        cout<<"Contact: "<<arr5[i];
+    }
+}
 
 void search()
 {}
