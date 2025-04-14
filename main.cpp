@@ -32,11 +32,11 @@ void show() {
 
     for (int i = 0; i<total; i++) {
         cout<<"Data of student: "<<i+1<<endl<<endl;
-        cout<<"Name: "<<arr1[i];
-        cout<<"Rollno: "<<arr2[i];
-        cout<<"Course: "<<arr3[i];
-        cout<<"Class: "<<arr4[i];
-        cout<<"Contact: "<<arr5[i];
+        cout<<"Name: "<<arr1[i]<<endl;
+        cout<<"Rollno: "<<arr2[i]<<endl;
+        cout<<"Course: "<<arr3[i]<<endl;
+        cout<<"Class: "<<arr4[i]<<endl;
+        cout<<"Contact: "<<arr5[i]<<endl;
     }
 }
 

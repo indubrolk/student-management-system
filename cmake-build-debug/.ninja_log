@@ -1,3 +1,5 @@
 # ninja log v6
 5	470	7662490185566601	CMakeFiles/student_management_system.dir/main.cpp.obj	d81ddbd653d1315
 472	676	7662490190236761	student_management_system.exe	6b22e26f7c210229
+32	1108	7663059186176347	CMakeFiles/student_management_system.dir/main.cpp.obj	d81ddbd653d1315
+1108	1388	7663059196934634	student_management_system.exe	6b22e26f7c210229
